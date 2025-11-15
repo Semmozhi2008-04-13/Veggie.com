@@ -1,2 +1,0 @@
-# Veggie.com
-Semmozhi

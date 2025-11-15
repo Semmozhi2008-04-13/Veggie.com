@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Veggie — Fresh Vegetables Online</title> <link rel="stylesheet" href="css/styles.css" />
+</head> 
+<body>
+<header class="site-header">
+<div class="container"> 
+<h1 class="logo">Veggie</h1> 
+<div class="controls"> 
+<input id="search" type="search" placeholder="Search vegetables..." /> 
+<button id="cartBtn" class="cart-btn">Cart (<span id="cart-count">0</span>)
+</button>
+</div>
+</div>
+</header> 
+<main class="container">
+<section class="toolbar"> <div class="filters">
+<label>Category: <select id="categoryFilter">
+<option value="all">All</option>
+<option value="leafy">Leafy</option>
+<option value="root">Root</option>
+<option value="fruiting">Fruiting</option>
+</select> 
+</label>
+<label>Sort: <select id="sortSelect">
+<option value="default">Default</option> 
+<option value="price-asc">Price: Low → High</option>
+<option value="price-desc">Price: High → Low</option> 
+</select
+> </label> 
+</div>
+</section>
+<section id="products" class="product-grid"></section>
+</main> 
+<div id="productModal" class="modal hidden">
+<div class="modal-content"> <button class="close" id="closeModal">×
+</button> 
+<img id="modalImage" src="" alt="" />
+<div class="modal-info"> <h2 id="modalTitle"></h2>
+<p id="modalDesc"></p> 
+<p class="price">$<span id="modalPrice"></span> / kg</p> 
+<label>Quantity: <input id="modalQty" type="number" value="1" min="1" />
+</label> 
+<button id="addToCartModal" class="btn primary">Add to cart</button>
+</div> 
+</div>
+</div> <!-- Cart drawer -->
+<aside id="cartDrawer" class="cart-drawer hidden"> 
+<h2>Your Cart</h2> <div id="cartItems">
+</div>
+<div class="cart-actions">
+<p>Total: $<span id="cartTotal">0.00</span>
+</p> <button id="checkoutBtn" class="btn primary">Checkout</button>
+<button id="closeCart" class="btn">Close</button> 
+</div> </aside> <footer class="site-footer"> 
+<div class="container">© Veggie — Fresh vegetables delivered. Simple demo site.</div> </footer> <script src="js/app.js"></script> </body> </html
